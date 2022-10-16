@@ -4,7 +4,13 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>🚚Trucking</title>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
@@ -14,5 +20,152 @@
     />
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
-  <body></body>
+  <body>
+    <header class="header">
+      <div class="top-header">
+        <div class="header-narrow container">
+          <ul class="lang-list">
+            <li><button type="button" class="lang-btn active">РУС</button></li>
+            <li><button type="button" class="lang-btn">ENG</button></li>
+            <li><button type="button" class="lang-btn">FR</button></li>
+          </ul>
+          <a href="tel:+88001234567" class="contact-link">8 (800) 123-45-67</a>
+          <a href="mailto:sales@log.ru" class="contact-link">sales@log.ru</a>
+        </div>
+      </div>
+
+      <div class="header-wide">
+        <div class="header-wide-meny container">
+          <a href="./index.html" class="logo">
+            <svg width="39px" height="46px">
+              <use href="./images/icons.svg#logo1"></use>
+            </svg>
+            <svg width="110px" height="21.6px">
+              <use href="./images/icons.svg#logo2"></use>
+            </svg>
+          </a>
+          <a href="" class="offices">
+            <svg width="25px" height="25px" class="offices-icon">
+              <use href="./images/icons.svg#placeholder"></use>
+            </svg>
+            Наши офисы</a
+          >
+          <nav class="navigation">
+            <ul class="nav-meny">
+              <li><a href="" class="navigation-link">услуги</a></li>
+              <li><a href="" class="navigation-link">О компании</a></li>
+              <li><a href="" class="navigation-link">вакансии</a></li>
+              <li><a href="" class="navigation-link">контакты</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section class="hero section">
+        <div class="hero-container container">
+          <h1 class="hero-title">Грузовые перевозки</h1>
+          <p class="hero-subtitle subtitle">
+            Перевозка крупногабаритных грузов по России и Европе. Полное экспедирование,
+            страхование, упаковка и хранение грузов
+          </p>
+        </div>
+      </section>
+      <section class="trucking section">
+        <div class="trucking-container container">
+          <div class="trucking-wrap">
+            <h2 class="trucking-title section-title">грузоперевозки по европе</h2>
+            <p class="trucking-subtitle">
+              Страны Евросоюза, а также Украина, <br />
+              Белоруссия со всеми документами.
+            </p>
+            <button type="button" class="details-btn">ПОДРОБНЕЕ</button>
+          </div>
+          <img src="./images/yellow-car.png" alt="Грузовое авто" width="445px" />
+          <div class="trucking-wrap">
+            <p class="text">след</p>
+            <p class="text">Назад</p>
+          </div>
+        </div>
+      </section>
+      <section class="services section">
+        <h2 class="services-title section-title">услуги</h2>
+        <ul class="services-list">
+          <li>
+            <h3 class="subject">Авиаперевозки</h3>
+          </li>
+          <li>
+            <h3 class="subject">Авиаперевозки</h3>
+          </li>
+          <li>
+            <h3 class="subject">Авиаперевозки</h3>
+          </li>
+          <li>
+            <h3 class="subject">Авиаперевозки</h3>
+          </li>
+          <li>
+            <h3 class="subject">Авиаперевозки</h3>
+          </li>
+          <li>
+            <h3 class="subject">Авиаперевозки</h3>
+          </li>
+          <li>
+            <h3 class="subject">Авиаперевозки</h3>
+          </li>
+          <li>
+            <h3 class="subject">Авиаперевозки</h3>
+          </li>
+        </ul>
+      </section>
+      <section class="about section">
+        <div>
+          <h2 class="about-title section-title">О компании</h2>
+          <p class="about-subtitle">
+            Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum
+            является стандартной "рыбой" для текстов на латинице с начала XVI века. В то время некий
+            безымянный печатник создал большую коллекцию размеров и форм шрифтов, используя Lorem
+            Ipsum для распечатки образцов. Lorem Ipsum не только успешно пережил без заметных
+            изменений пять веков, но и перешагнул в электронный дизайн.
+          </p>
+        </div>
+        <div>
+          <ul class="about-list">
+            <li class="about-list-item">
+              <p class="numbers">48</p>
+              <p class="description">офисов</p>
+              <p class="description-text">В Европе и СНГ</p>
+            </li>
+            <li class="about-list-item">
+              <p class="numbers">361</p>
+              <p class="description">грузовиков</p>
+              <p class="description-text">Volvo, Scania</p>
+            </li>
+            <li class="about-list-item"></li>
+            <li class="about-list-item"></li>
+            <li class="about-list-item">
+              <p class="numbers">1500</p>
+              <p class="description">сотрудников</p>
+              <p class="description-text">профессионалов</p>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="maps"></section>
+    </main>
+    <footer class="footer">
+      <address class="address">
+        <ul class="address-list">
+          <li class="address-item">
+            <a class="link">123456, Санкт-Петербург, Невский пр-кт 127</a>
+            <a href="mailto:sales@log.ru" class="link">sales@log.ru</a>
+          </li>
+          <li class="address-item">
+            <a href="tel:+78123445665" class="link">+7 (812) 344-56-65</a>
+            <a href="tel:+78123555665" class="link">+7 (812) 355-56-65</a>
+          </li>
+        </ul>
+      </address>
+      <a href="" class="developed">Разработано - D-E-N.ru</a>
+    </footer>
+  </body>
 </html>

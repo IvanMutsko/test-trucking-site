@@ -1,0 +1,270 @@
+/*===== Палітра і основні стилі сайту =====*/
+
+/* ------------------------------ */
+:root {
+  --main-bg: #2f343a;
+  --secondary-bg: #c8a35f;
+  --secondary-dark-bg: #393f47;
+
+  --main-txt: #ffffff;
+  --secondary-txt: #f2f2f2;
+  --dark-txt: #2f343a;
+  --gold-txt: #c8a35f;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+ul {
+  margin: 0;
+  padding-left: 0;
+  list-style: none;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+button {
+  cursor: pointer;
+}
+a {
+  cursor: pointer;
+}
+
+/* ---------------------------- */
+
+body {
+  font-family: 'Roboto', sans-serif;
+  color: var(--main-txt);
+  background: var(--main-bg);
+}
+.container {
+  width: 1200px;
+  padding-left: 45px;
+  padding-right: 45px;
+  margin-right: auto;
+  margin-left: auto;
+}
+.section {
+  margin-left: auto;
+  margin-right: auto;
+}
+.section-title {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 1.22;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+/* ===================Header=================== */
+
+.header {
+  font-size: 12px;
+  line-height: 1.16;
+
+  display: block;
+  flex-direction: column;
+
+  /* background-color: red; */
+}
+
+.top-header {
+  background-color: var(--secondary-bg);
+}
+
+.header-narrow {
+  background-color: var(--secondary-bg);
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+}
+.lang-list {
+  display: flex;
+  gap: 10px;
+}
+.lang-btn {
+  border-color: transparent;
+  background-color: transparent;
+  color: inherit;
+  opacity: 0.5;
+  text-transform: uppercase;
+
+  padding: 16px 0;
+}
+
+.active {
+  opacity: 1;
+}
+
+.lang-btn:hover,
+.lang-btn:focus {
+  opacity: 1;
+}
+
+.contact-list {
+  display: flex;
+}
+.contact-link {
+  display: inline-block;
+  text-decoration: none;
+  color: inherit;
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+
+.contact-link:hover,
+.contact-link:focus {
+  opacity: 0.5;
+}
+
+.header-wide {
+  background-color: var(--main-bg);
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.05em;
+}
+.header-wide-meny {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 11px;
+  margin-right: 60px;
+}
+
+.offices {
+  display: flex;
+
+  color: inherit;
+  text-decoration: none;
+
+  align-items: center;
+  margin-right: auto;
+  padding: 37px 0;
+}
+
+.offices-icon {
+  margin-right: 10px;
+  fill: var(--gold-txt);
+}
+
+.nav-meny {
+  display: flex;
+  gap: 30px;
+}
+
+.navigation-link {
+  display: inline-flex;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: inherit;
+  padding: 42px 0;
+}
+
+.offices:hover,
+.offices:focus,
+.navigation-link:hover,
+.navigation-link:focus {
+  color: var(--gold-txt);
+}
+
+/* ===================Main=================== */
+
+/* Hero */
+
+.hero {
+  display: flex;
+  background: linear-gradient(0deg, rgba(47, 52, 58, 0.75), rgba(47, 52, 58, 0.75)),
+    url(../images/hero.jpg);
+  max-width: 1920px;
+  justify-content: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+
+.hero-container {
+  max-width: 920px;
+  margin-top: 155px;
+  margin-bottom: 220px;
+  padding: 45px 72px;
+  border: 1px solid var(--secondary-bg);
+}
+
+.hero-title {
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 1.17;
+  text-align: center;
+
+  text-transform: uppercase;
+  margin-bottom: 45px;
+}
+
+.hero-subtitle {
+  font-size: 18px;
+  line-height: 1.55;
+  text-align: center;
+}
+
+/* Trucking */
+.trucking {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+.trucking-container {
+  display: flex;
+}
+
+.trucking-wrap {
+  max-width: 445px;
+}
+
+.trucking-title {
+  margin-bottom: 30px;
+}
+
+.trucking-subtitle {
+  font-size: 18px;
+  line-height: 1.55;
+  margin-bottom: 50px;
+}
+
+.details-btn {
+  background-color: var(--secondary-bg);
+  border-color: transparent;
+  color: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.56;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+
+  padding: 18px 48px;
+}
+
+.details-btn:hover,
+.details-btn:focus {
+  border-radius: 10px;
+  -webkit-box-shadow: inset 0px 0px px -2px rgba(0, 0, 0, 1);
+  -moz-box-shadow: inset 0px 0px 10px -2px rgba(0, 0, 0, 1);
+  box-shadow: inset 0px 0px 10px -2px rgba(0, 0, 0, 1);
+}
+
+/* ===================Footer=================== */
