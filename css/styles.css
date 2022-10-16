@@ -224,19 +224,25 @@ body {
 
 /* Trucking */
 .trucking {
-  padding-top: 120px;
-  padding-bottom: 120px;
 }
 
 .trucking-container {
   display: flex;
+  padding-top: 120px;
+  padding-bottom: 120px;
+  background-image: url(../images/yellow-car.png);
+  background-repeat: no-repeat;
+  background-position: top 166px left 475px;
+  background-size: 445px 266px;
 }
 
-.trucking-wrap {
+.trucking-wrap:first-child {
   max-width: 445px;
+  margin-right: 504px;
 }
 
 .trucking-title {
+  margin-top: 40px;
   margin-bottom: 30px;
 }
 
@@ -265,6 +271,48 @@ body {
   -webkit-box-shadow: inset 0px 0px px -2px rgba(0, 0, 0, 1);
   -moz-box-shadow: inset 0px 0px 10px -2px rgba(0, 0, 0, 1);
   box-shadow: inset 0px 0px 10px -2px rgba(0, 0, 0, 1);
+}
+
+.trucking-wrap:last-child {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  margin-top: 30px;
+}
+
+.trucking-wrap .text {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.56;
+  text-align: center;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--gold-txt);
+}
+
+.text:first-child::after {
+  display: inline-flex;
+
+  margin-left: 31px;
+  content: ' ';
+  width: 65px;
+  height: 20px;
+  background-image: url(../images/arrowright.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.text:last-child::before {
+  display: inline-flex;
+
+  margin-right: 31px;
+  content: ' ';
+  width: 65px;
+  height: 20px;
+  background-image: url(../images/arrowleft.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 
 /* ===================Footer=================== */
