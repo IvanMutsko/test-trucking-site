@@ -183,6 +183,12 @@ body {
   color: var(--gold-txt);
 }
 
+.offices:hover .offices-icon,
+.offices:focus .offices-icon {
+  fill: var(--main-txt);
+  border-bottom: 2px solid var(--gold-txt);
+}
+
 /* ===================Main=================== */
 
 /* Hero */
@@ -224,6 +230,8 @@ body {
 
 /* Trucking */
 .trucking {
+  background-image: linear-gradient( to right, #393f47 calc((100% - 410px) / 2), transparent calc((100% - 410px) / 2), transparent calc((100% - 410px) / 2 + 410px), #393f47 calc((100% - 410px) / 2 + 410px)            );
+  background-position: center;
 }
 
 .trucking-container {
@@ -234,6 +242,7 @@ body {
   background-repeat: no-repeat;
   background-position: top 166px left 475px;
   background-size: 445px 266px;
+  
 }
 
 .trucking-wrap:first-child {
@@ -289,6 +298,9 @@ body {
   letter-spacing: 0.1em;
   text-transform: uppercase;
   color: var(--gold-txt);
+
+  display: flex;
+  text-align: center;
 }
 
 .text:first-child::after {
@@ -297,7 +309,7 @@ body {
   margin-left: 31px;
   content: ' ';
   width: 65px;
-  height: 20px;
+  height: 24px;
   background-image: url(../images/arrowright.svg);
   background-size: contain;
   background-repeat: no-repeat;
@@ -309,7 +321,7 @@ body {
   margin-right: 31px;
   content: ' ';
   width: 65px;
-  height: 20px;
+  height: 24px;
   background-image: url(../images/arrowleft.svg);
   background-size: contain;
   background-repeat: no-repeat;
